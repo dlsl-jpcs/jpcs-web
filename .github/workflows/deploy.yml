@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: read|write
-  pages: read|write
-  contents: read|write
-  deployments: read|write
-  packages: read|write
+  actions: write
+  pages: write
+  contents: write
+  deployments: write
+  packages: write
 
 jobs:
   build: 
