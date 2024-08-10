@@ -75,7 +75,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1em;
-
   font-family: 'The Gaeilge Kids', sans-serif;
 }
 
@@ -100,6 +99,7 @@ body {
   font-weight: 400;
   text-align: center;
   font-size: 12rem;
+  line-height: 0.8;
   -webkit-text-stroke: 2px #202020;
 }
 

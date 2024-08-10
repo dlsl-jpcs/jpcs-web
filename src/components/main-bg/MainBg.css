@@ -35,8 +35,6 @@
     grid-template-rows: repeat(40, 1fr);
     grid-template-columns: repeat(40, 1fr);
     position: absolute;
-    /* transform: rotateX(60deg) rotateY(-5deg) rotateZ(35deg) scale(1.25); */
-    /* transform: rotateX(60deg); */
     transform: rotate(-45deg) skew(15deg, 15deg);
 }
 
@@ -117,59 +115,4 @@
 
 .tile:nth-child(11n + 10):hover {
     background-color: rgb(var(--yellow-rgb));
-}
-
-/* -- Links -- */
-
-#links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    z-index: 100;
-    padding: 1rem;
-}
-
-.meta-link {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.meta-link> :is(span, a) {
-    font-family: "Rubik", sans-serif;
-    font-size: 1.25rem;
-    color: white;
-}
-
-.meta-link>.label {
-    text-align: right;
-}
-
-.meta-link>a {
-    text-decoration: none;
-    outline: none;
-}
-
-.meta-link>a.source {
-    color: rgb(94, 106, 210);
-}
-
-.meta-link>a:is(:hover, :focus)>i {
-    color: white;
-}
-
-.meta-link>a.youtube {
-    color: rgb(239, 83, 80);
-}
-
-.meta-link>a.youtube>i {
-    padding-top: 0.2rem;
-}
-
-.meta-link>a>i {
-    height: 1rem;
-    line-height: 1rem;
 }

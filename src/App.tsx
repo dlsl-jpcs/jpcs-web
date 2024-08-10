@@ -1,7 +1,4 @@
 import './App.css'
-import rainbow from './assets/stickers-v40.png'
-import rainbowRight from './assets/stickers-v28.png'
-
 import MainBg from './components/main-bg/MainBg'
 
 function App() {
