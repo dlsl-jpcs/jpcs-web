@@ -18,7 +18,7 @@ If you don't already have Bun installed, you can install it by following the [in
 Clone this repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/yourusername/jpcs-dlsl-website.git
+git clone https://github.com/dlsl-jpcs/jpcs-web.git
 cd jpcs-dlsl-website
 ```
 
