@@ -3,6 +3,13 @@ name: Deploy
 on: 
   workflow_dispatch:
 
+permissions:
+  actions: read|write
+  pages: read|write
+  contents: read|write
+  deployments: read|write
+  packages: read|write
+
 jobs:
   build: 
     name: Build
