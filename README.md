@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# The Official JPCS-DLSL Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the official website of the Junior Philippine Computer Society - De La Salle Lipa (JPCS-DLSL). The project is built using React and Vite, with the usage of Bun highly encouraged for development.
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Node.js** (for Bun installation)
+- **Bun** (recommended for managing dependencies, running scripts, and building the project)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Install Bun
 
-- Configure the top-level `parserOptions` property like this:
+If you don't already have Bun installed, you can install it by following the [installation guide here](https://bun.sh/docs/installation).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 2. Clone the Repository
+
+Clone this repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/yourusername/jpcs-dlsl-website.git
+cd jpcs-dlsl-website
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 3. Install dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Once inside the project directory, install the necessary dependencies. If you have Bun installed, run:
+```bash
+bun install
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### 4. Running locally
+
+To start the development server and run the website locally, use the following command:
+
+```bash
+bun run dev
+```
+The development server will start, and you can access the website at http://localhost:3000.
+
+### 5. Building for production
+
+```bash
+bun run build
 ```
